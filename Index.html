@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form  action="confirmation.html" id="survey-form">
+            <h1  id="user-info">User Information</h1>
+            <p id="description"> Pleas fill the form!</p>
+
+            <div>   
+                <label class="inline-block" id="name-label">Name:</label>
+                 <input required="" id="name" placeholder="enter your name"  type="text">
+            </div>
+
+            <div> 
+                 <label class="inline-block" id="email-label">Email:</label>
+                 <input required="" id="email" placeholder="enter your email" type="email">
+            </div>
+
+            <div>
+                <label class="inline-block" id="age-label">Age:</label>
+                <input required="" id="numner" min="14" max="100" placeholder="enter your age" type="number">
+            </div>
+         
+            
+            <label id="civil-S">Civil Status:</label>
+            <select required="">
+                <option value="">Single</option>
+                <option value="">Married</option>
+                <option value="">Divorced</option>
+                <option value="">Widowed</option>  
+            </select>
+
+        <div>
+            <label>What do you do?</label>
+            <input name="What-do" id="student" type="radio">
+            <label class="inline-label">Student</label>
+            <input name="What-do" id="Employed" type="radio">
+            <label class="inline-label">Employed</label>
+            <input name="What-do" id="Retired"  type="radio">
+            <label class="inline-label">Retired</label>
+        </div>
+
+
+        <div>
+           <label>What Programmig language do you know? </label>
+            <input value="html-css" type="checkbox">
+            <label class="inline-label">HTML-CSS</label>
+            <input value="javascirpt" type="checkbox">
+            <label class="inline-label"> javascirpt</label>
+            <input value="pithon" type="checkbox">
+            <label class="inline-label">Python</label>
+        </div>
+
+            <label>Tell us about yourself?</label>
+            <textarea required="" id="textarea"></textarea>
+
+            <button>Submit</button>
+            
+        </form>
+    </div>
+    
+</body>
+</html>
